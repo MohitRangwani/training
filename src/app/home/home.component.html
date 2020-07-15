@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-4">
+        <app-task (taskCreated) = "onTaskEmitted($event)"> 
+        </app-task>
+    </div>
+    <div class="col-md-8">
+        <app-task-list [tasks]=appTasks> </app-task-list>
+    </div>
+ </div>
+
+ <HR>
+    <app-dashboard></app-dashboard>
+ 

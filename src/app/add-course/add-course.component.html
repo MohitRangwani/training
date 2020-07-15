@@ -1,0 +1,12 @@
+<p>Works</p>
+<form (submit) = "onFormSubmit()" [formGroup]="courseForm">
+    Name : <input type ="text" formControlName = "name">
+    <BR><BR>
+    Price : <input type ="text" formControlName = "price">
+    <BR><BR>
+    Short Description : <input type ="text" formControlName = "shortDescription">
+    <BR><BR>
+    Description : <input type ="text" formControlName = "description">
+    <BR><BR>
+        <input type = "submit" [disabled]="!courseForm.valid" value="Add Course">
+    </form>

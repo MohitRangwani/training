@@ -1,0 +1,13 @@
+<div class ="row">
+    <div class="col-sm-4" *ngFor="let p of persons"> 
+        <div class="alert alert-dismissible alert-danger">   
+            <strong>{{p.name}}</strong> 
+            <br>{{p.address}}
+          </div>
+    </div>
+</div>
+<a routerLink="/persons/add-person"> Add Person </a>
+<HR>
+    <div class="container-fluid">
+        <router-outlet> </router-outlet>
+        </div>
